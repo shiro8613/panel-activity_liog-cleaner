@@ -990,7 +990,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "panel-activity_liog-cleaner"
+name = "panel-activity_log-cleaner"
 version = "0.1.0"
 dependencies = [
  "chrono",
