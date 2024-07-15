@@ -17,6 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: cargo build --verbose
+      run: cargo build --release
     - name: Run tests
       run: cargo test --verbose
+    - name: upload_binary
+      uses: actions/upload-artifact@v4
+      with:
+        name: panel-activity_log-cleaner
+        path: target/release/panel-activity_log-cleaner
